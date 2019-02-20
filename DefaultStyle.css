@@ -1,8 +1,42 @@
 body {
   background-image: url("coffee background2.JPG");
   background-size: cover;
+  margin: 0;
+  padding: 10px;
 }
-head{
+div.headingnav{
+  background-image: url("Coffee heading1.JPG");
+  padding: 200px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
   font-size: 30px;
-  font-family: "Forte";
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #993300;
+  overflow: hidden;
+  align-items: center;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #ff6600;
+  color: white;
 }
