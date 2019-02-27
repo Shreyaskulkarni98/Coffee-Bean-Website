@@ -1,20 +1,26 @@
 body {
   background-image: url("coffee background2.JPG");
   background-size: cover;
-  margin: 0;
-  padding: 10px;
+
 }
+
 div.headingnav{
   background-image: url("Coffee heading1.JPG");
-  padding: 200px;
+  height: 400px;
+  width: 100%;
+}
+
+div.para{
+  padding: 10px;
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
   font-size: 30px;
   font-weight: bold;
+  font-family: Bahnschrift Condensed;
   color: #ffffff;
-  background-color: #993300;
+  background-color: #993300; /*dark orange*/
   overflow: hidden;
   align-items: center;
 }
@@ -31,12 +37,16 @@ div.headingnav{
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #e64d00; /*grey*/
   color: black;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #ff6600;
+  background-color: inherit; /*orange*/
   color: white;
+}
+
+.topnav_rightpart a{
+  float: right;
 }
