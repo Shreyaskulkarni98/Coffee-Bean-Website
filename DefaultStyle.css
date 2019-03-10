@@ -1,17 +1,21 @@
 body {
   background-image: url("coffee background2.JPG");
   background-size: cover;
-
+  margin: auto;
 }
 
 div.headingnav{
   background-image: url("Coffee heading1.JPG");
   height: 400px;
   width: 100%;
+
 }
 
 div.para{
-  padding: 10px;
+  padding-left: 150px;
+  padding-right: 150px;
+  font-size: 25px;
+  font-family: sans-serif;
 }
 
 /* Add a black background color to the top navigation */
@@ -37,16 +41,22 @@ div.para{
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #e64d00; /*grey*/
+  background-color: #e64d00; /*middark orange*/
   color: black;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: inherit; /*orange*/
+  background-color: #e64d00; /*middark orange*/
   color: white;
 }
 
 .topnav_rightpart a{
   float: right;
+}
+
+.form{
+  height: auto;
+  align-items: center;
+  justify-content: center
 }
