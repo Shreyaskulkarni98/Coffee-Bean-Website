@@ -4,13 +4,6 @@ body {
   margin: auto;
 }
 
-div.headingnav{
-  background-image: url("Coffee heading1.JPG");
-  height: 400px;
-  width: 100%;
-
-}
-
 div.para{
   padding-left: 150px;
   padding-right: 150px;

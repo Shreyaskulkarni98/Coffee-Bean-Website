@@ -4,30 +4,38 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="DefaultStyle.css">
     <title>Coffee Bean Sign Up</title>
+
+    <style>
+      body{
+        margin: 10px;
+      }
+    </style>
+    <script type="text/javascript" src="validate_signlogform.js"></script>
+
   </head>
     <h1 align="center">Coffee Bean</h1>
   <body>
     <h2>Register New User</h2>
 
-    <form action="index.html" method="post">
+    <form name="Signup_form" action="Coffee Bean Website.html" onsubmit="return validateForm()" method="post">
       <fieldset>
         <legend>Personal information:</legend>
-        First name: <input type="text" name="firstname"><br><br>
-        Last name: <input type="text" name="lastname"><br><br>
+        First name: <input type="text" name="firstname" required><br><br>
+        Last name: <input type="text" name="lastname" required><br><br>
         Gender: <input type="radio" name="Gender" value="Male"> Male <input type="radio" name="Gender" value="Female"> Female <br><br>
-        Date Of Birth: <input type="number" name="Date-DayOfMonth"> / <input type="number" name="Date-Month"> / <input type="number" name="Date-Year"> (dd/mm/yyyy) <br><br>
-        Department: <select name="dept">
+        Date Of Birth: <input type="number" name="Date-DayOfMonth" required> / <input type="number" name="Date-Month" required> / <input type="number" name="Date-Year" required> (dd/mm/yyyy) <br><br>
+        Department: <select name="dept" required>
           <option value="Computer Science">Computer Science</option>
           <option value="IT">IT</option>
           <option value="Software">Software</option>
         </select> <br><br>
-        Email ID: <input type="text" name="Email"><br><br>
-        Phone Number: <input type="number" name="Phone"><br>
+        Email ID: <input type="text" name="Email" required><br><br>
+        Phone Number: <input type="number" name="Phone" required><br>
       </fieldset><br>
       <fieldset>
         <legend>Account Settings</legend>
-        Password: <input type="password" name="Password"><br><br>
-        Confirm Password: <input type="password" name="Confirm Password"><br>
+        Password: <input type="password" name="Password" required><br><br>
+        Confirm Password: <input type="password" name="Confirm Password" required><br>
       </fieldset><br>
       <input type="submit" value="Submit">
     </form>
